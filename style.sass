@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i');
+
+:root
+  background #444
+ 
+*
+  padding 0
+  margin 0
+
+.social-btn
+  height auto
+  width auto
+  padding 5px
+  margin 10px
+  border none
+  border-radius 3px
+  background #263238
+  box-shadow 1.8px 1.8px 9px #263238
+  &:hover
+    transform scale(1.1)
+    transition all .1s ease-in-out
+  a
+    color #00b0ff
+    text-decoration none
+
+  
+  
+.container
+  display grid
+  place-content center
+  height 100vh
+
+  
+.vscode
+  font-family 'Roboto Mono', monospace
+  display grid
+  font-size 100%
+  min-width 300px
+  min-height 35vh
+  background #263238
+  border-radius 3px
+  box-shadow 1.8px 1.8px 9px #263238
+  grid-template-columns 100%
+  grid-template-rows 20px 1fr
+  grid-gap 10px
+  
+  
+.workbench
+  padding 2px 5px
+  height 20px
+  width 100%
+  display grid
+  grid-template-columns repeat(3, 20px) 1fr
+  .red
+    background-color #f44336
+  .yellow
+    background-color #ffeb3b
+  .green
+    background-color #4caf50
+  .circle
+    place-self center center
+    height 15px
+    width 15px
+    border-radius 100%
+  .file-name
+    place-self center
+    color #607d8b
+    font-weight 300
+    padding 0
+ 
+
+.code
+  font-weight 500
+  display grid
+  place-items start
+  grid-template-rows 10% 10% 80%
+  grid-gap 10px
+  padding 10px 20px
+  .import
+    place-self start
+    color #fff
+      
+  .component
+    color #fff
+    place-self start
+    .tab
+      margin 0 20px
+    .tab-twice
+      margin 0 40px
+    .tab-thrice
+      margin 0 60px
+    .tab-last
+      margin 0 80px
+    
+   
+      
+.lightblue
+  color #00b0ff
+.darkblue
+  color #607d8b
+  
+@media only screen and (max-width 600px)
+  .vscode
+    font-size 10px
